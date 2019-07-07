@@ -1,5 +1,6 @@
 require './current_age_for_birth_year'
 
-puts what year were you born?
+puts "What year were you born?"
 birth_year = gets.to_i
-puts "You are "+ current_age_for_birth_year + " years old."
+age = current_age_for_birth_year(birth_year)
+puts "You are " + age.to_s + " years old."
